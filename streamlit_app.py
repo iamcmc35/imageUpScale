@@ -26,14 +26,14 @@ def main():
         image = Image.open(uploaded_file)
 
         # 원본 이미지 표시
-        st.image(image, caption="Original Image", use_column_width=True)
+        st.image(image, caption="Original Image", use_container_width=True)
 
         if st.button("Resize Image (2x)"):
             # 이미지 크기를 2배로 변경
             resized_image = resize_image(image, scale=2)
 
             # 리사이즈된 이미지 표시
-            st.image(resized_image, caption="Resized Image (2x)", use_column_width=True)
+            st.image(resized_image, caption="Resized Image (2x)", use_container_width=True)
 
             # 다운로드 링크 제공
             buffer = BytesIO()

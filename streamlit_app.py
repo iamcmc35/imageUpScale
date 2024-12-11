@@ -28,7 +28,7 @@ def main():
         # 원본 이미지 표시
         st.image(image, caption="Original Image", use_column_width=True)
 
-        if st.button("Resize Image (2x)")):
+        if st.button("Resize Image (2x)"):
             # 이미지 크기를 2배로 변경
             resized_image = resize_image(image, scale=2)
 
